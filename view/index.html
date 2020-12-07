@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simplified Calculator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body style="background:linear-gradient(to left,   
+    #5aecff 50%,
+    #d9e1e6 0%,
+    #b1e1f1 50%,
+    #33ccff 100%);">
+        <div style= "padding-top: 1%;">
+        <h1 style = "font-size: 20px; padding-left: 2%;">Calculator App</h1>
+         </div>
+        <div class="container-fluid" style = "padding-left: 3%; padding-top: 2%; border-bottom-left-radius: 1%; background-color:lightgoldenrodyellow">
+            <form action="/receivenumber" method="post">
+                Enter Number and press Enter: <input type="text" name="Number">
+                <input type="submit" value="Enter">
+              </form>
+
+    <p>     Select Operation</p>
+      
+            <form action="/addition" method="post">
+                <input type="submit" value="Addition"  action="/addition" method="post">
+            </form>
+
+        
+            <form action="/subtraction" method="post">
+                <input type="submit" value="Subtraction">
+            </form>
+      
+            <form action="/multiplication" method="post">
+                <input type="submit" value="Multiplication">
+            </form>
+       
+            <form action="/division" method="post">
+                <input type="submit" value="Division">
+            </form>
+        
+            <form action="/answers" id="usrform">
+                Answer is:      <input type="text" name="usrname" value="{{.}}" size="50"> 
+            </form>
+       
+                <form action="/reset" method="post">
+                    <input type="submit" value="Reset">
+                  </form>
+                  <br></br>
+        </div>
+    </body>
+</html>
+

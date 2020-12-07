@@ -1,0 +1,12 @@
+{
+  "name": "Smart Calculator",
+  "description": "Golang Calculator",
+  "keywords": [
+    "bijoy",
+    "golang",
+    "smart",
+    "calculator"
+  ],
+  "website": "https://github.com/bijoyko/golangcalculator",
+  "repository": "https://github.com/bijoyko/golangcalculator"
+}
